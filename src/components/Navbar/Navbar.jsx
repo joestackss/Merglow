@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 // import { FaTwitter, FaSkype, FaVimeoV } from "react-icons/fa";
-import { IoMdRocket } from "react-icons/io";
+import { FaRegUser, FaShoppingCart} from "react-icons/fa";
 
 const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar w-100 flex">
       <div className="container w-100">
         <div className="navbar-content flex fw-7">
-          <div className="brand-and-toggler flex flex-between w-90">
+          <div className="brand-and-toggler flex flex-between nav-width">
             <Link to="/" className="navbar-brand fs-26">
               Merglow
             </Link>
@@ -37,23 +37,23 @@ const Navbar = () => {
             }`}
           >
             <div className="navbar-collapse-content">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav nav-width-1">
                 <li className="text-black">
-                  <Link to="/">Shop</Link>
+                  <Link to="/Shop">Shop</Link>
                 </li>
                 <li className="text-black">
-                  <Link to="/">Science</Link>
+                  <Link to="/Science">Science</Link>
                 </li>
                 <li className="text-black">
-                  <Link to="/">About Us</Link>
+                  <Link to="/About Us">About Us</Link>
                 </li>
               </ul>
               <div className="flex navbar-btns">
                 <button type="button" className="btn">
-                  <IoMdRocket /> <span>login</span>
+                  <FaRegUser /> <span>login</span>
                 </button>
                 <button type="button" className="btn">
-                  <IoMdRocket /> <span>cart</span>
+                  <FaShoppingCart /> <span>cart</span>
                 </button>
               </div>
             </div>

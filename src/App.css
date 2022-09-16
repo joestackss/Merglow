@@ -132,12 +132,17 @@ select {
   width: 100%;
 }
 
-.w-20 {
-  width: 20%;
+.nav-width {
+  width: 10%;
 }
 
-.w-90 {
+.nav-width-1 {
   width: 90%;
+}
+
+.nav-width-2 {
+  width: 10%;
+  background-color: green;
 }
 
 /* text and paras */
@@ -410,7 +415,22 @@ select {
 }
 
 @media screen and (max-width: 768px) {
-  .w-90 {
+  .nav-width {
     width: 100%;
+  }
+
+  .nav-width-1 {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 982px) {
+  .nav-width {
+    width: 100%;
+  }
+
+  .nav-width-1 {
+    width: 90%;
   }
 }
