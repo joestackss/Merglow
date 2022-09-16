@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="navbar-content flex fw-7">
           <div className="brand-and-toggler flex flex-between nav-width">
             <Link to="/" className="navbar-brand fs-26">
-              Merglow
+              <img src="merglow-logo.svg" alt="logo" />
             </Link>
             <div
               type="button"
@@ -50,10 +50,12 @@ const Navbar = () => {
               </ul>
               <div className="flex navbar-btns">
                 <button type="button" className="btn">
-                  <FaRegUser /> <span>login</span>
+                  <FaRegUser /> <span>Login</span>
                 </button>
+                </div>
+                <div className="flex navbar-btns">
                 <button type="button" className="btn">
-                  <FaShoppingCart /> <span>cart</span>
+                  <FaShoppingCart /> <span>Cart</span>
                 </button>
               </div>
             </div>
