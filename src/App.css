@@ -3,6 +3,8 @@
 /* variables */
 :root {
   --fnt-base: 'Manrope', sans-serif;
+  --clr-orange: #E67300;
+  --clr-darkOrange: #653126;
   --clr-robin-blue: #5764de;
   --clr-crazy-blue: #55b3d5;
   --clr-black: #000;
