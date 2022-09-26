@@ -3,21 +3,24 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  BrowserRouter,
-} from "react-router-dom";
+import classes from "./TheNavbar.module.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Homepage from "./components/Home/Homepage";
 import About from "./components/About/About";
 import Shop from "./components/Shop/Shop";
 
 function App() {
   return (
+    <Router>
       <div className="App">
-        <Navbar bg="light" expand="lg">
+        <Navbar
+          bg="light"
+          expand="lg"
+          className={`${classes.navbar} fixed-top`}
+          data-aos="fade-down"
+          data-aos-easing="ease-out"
+          data-aos-duration="2000"
+        >
           <Container>
             <Navbar.Brand as={Link} to="/">
               <img
@@ -35,9 +38,6 @@ function App() {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link as={Link} to="/">
-                  Home
-                </Nav.Link>
                 <Nav.Link as={Link} to="/shop">
                   Shop
                 </Nav.Link>
@@ -61,6 +61,7 @@ function App() {
           </Routes>
         </div>
       </div>
+    </Router>
   );
 }
 
