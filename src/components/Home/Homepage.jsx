@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
-import "./Header-Home.css";
+import "./home.css";
 
-const Header = () => {
+const Homepage = () => {
   return (
     <header className="header flex flex-center flex-column">
-      <Navbar />
       <div className="container">
         <div className="header-content text-center flex flex-center flex-column">
           <h2 className="text-white">
@@ -24,4 +22,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Homepage;

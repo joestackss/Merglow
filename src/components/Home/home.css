@@ -1,7 +1,7 @@
 .header {
     min-height: 100vh;
     /* background-image: url('../../../assets/images/header_main_img.jpg'), linear-gradient(to right, #6DB3F2, #6DB3F2); */
-    background-image: url('../../../assets/images/texture-header.png');
+    /* background-image: url('../../../assets/images/texture-header.png'); */
     background-color: var(--clr-gintaras);
     background-position: center;
     background-blend-mode: multiply;
