@@ -1,0 +1,6 @@
+.section-one {
+    background-image: url(../../assets/images/texture-header.png);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+}

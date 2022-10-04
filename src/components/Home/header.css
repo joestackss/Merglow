@@ -1,0 +1,11 @@
+
+
+.sec-one {
+    background-image: url(../../assets/images/sec-header.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.left-s {
+    left: 25%;  
+}
